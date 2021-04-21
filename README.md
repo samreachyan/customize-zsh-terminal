@@ -1,5 +1,8 @@
 # Customize Zsh Terminal ⌨️ 🇰🇭
 
+![Terminal](https://user-images.githubusercontent.com/32268364/115517214-1c248a80-a2b1-11eb-9092-f1757a6037ff.gif)
+
+
 ## ការដំណើរ `zsh terminal` ជំនួយការប្រើប្រាស់លើ `ubuntu`
 ```
 $ sudo apt install zsh
@@ -49,6 +52,8 @@ ZSH_THEME="gnzh"
 - gnzh
 - sonicradish
 - gozilla
+
+![Nano](https://user-images.githubusercontent.com/32268364/115516781-a7e9e700-a2b0-11eb-92c2-70da67476369.gif)
 
 ចុងក្រោយដើម្បីរួចរាល់យើងត្រូវប្រើ `command line` ដើម្បីដំណើរការ `zsh terminal` ៖ 
 ```
