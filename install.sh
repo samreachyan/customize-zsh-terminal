@@ -10,8 +10,8 @@ echo "+ Starting upgrade system"
 apt-get -y upgrade
 
 echo "+ Install some package:"
-apt-get install zsh -y
-apt-get install git -y
+apt-get -y install zsh
+apt-get -y install git
 echo "Done: zsh and git"
 
 GIT=`which git`
@@ -34,7 +34,7 @@ fi
 myrepo='https://github.com/robbyrussell/oh-my-zsh.git'
 syntax_plugin1="https://github.com/zsh-users/zsh-syntax-highlighting.git"
 syntax_plugin2="https://github.com/zsh-users/zsh-autosuggestions.git"
-mylocal=$HOME/.oh-my-zs
+mylocal=$HOME/.oh-my-zsh
 
 echo $mylocal
 echo $myrepo
@@ -48,8 +48,8 @@ git clone $syntax_plugin2 $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
 
 echo "Copying directory ... for backup: $HOME/.zshrc.origin"
-cp -rf $HOME/.oh-my-zsh/templates/zshrc.zsh-template $HOME/.zshrc
-cp -rf $HOME/.zshrc $HOME/.zshrc.orgi
+cp -R $HOME/.oh-my-zsh/templates/zshrc.zsh-template $HOME/.zshrc
+cp -R $HOME/.zshrc $HOME/.zshrc.orgi
 
 echo "Replace plugins in .zshrc"
 
@@ -73,6 +73,8 @@ fi
 echo -e "\n\n************************"
 echo -e "******** DONE **********"
 echo -e "************************\n"
-echo -e "Start command : chsh -s $(which zsh) && source $HOME/.zshrc"
+echo -e "Start command : chsh -s $(which zsh)"
+echo -e "Start command : source $HOME/.zshrc"
 
-chsh -s $(which zsh) && source $HOME/.zshrc
+chsh -s $(which zsh) 
+source $HOME/.zshrc
