@@ -2,7 +2,7 @@
 
 ![Terminal](https://user-images.githubusercontent.com/32268364/115517214-1c248a80-a2b1-11eb-9092-f1757a6037ff.gif)
 
-## Quick step:
+## Quick step with ubuntu:
 
 Download
 
@@ -19,6 +19,8 @@ chmod +x ./install.sh
 Run
 
 ```
+sudo ./install.sh
+# Or
 sudo ./install.sh /home/ubuntu
 ```
 
