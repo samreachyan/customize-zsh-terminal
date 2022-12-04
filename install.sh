@@ -73,8 +73,5 @@ fi
 echo -e "\n\n************************"
 echo -e "******** DONE **********"
 echo -e "************************\n"
-echo -e "Start command : chsh -s $(which zsh)"
-echo -e "Start command : source $HOME/.zshrc"
-
-chsh -s $(which zsh) 
-source $HOME/.zshrc
+echo -e "\n>> Start command : chsh -s $(which zsh)"
+echo -e ">> Start command : source $HOME/.zshrc"

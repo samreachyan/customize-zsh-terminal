@@ -22,10 +22,11 @@ Run
 sudo ./install.sh /home/ubuntu
 ```
 
-Or alternative:
+Activate zsh
 
 ```
-curl -L https://github.com/samreachyan/customize-zsh-terminal/raw/main/install.sh | sudo sh /home/ubuntu
+chsh -s $(which zsh)
+source ~/.zshrc
 ```
 
 ## ការដំណើរ `zsh terminal` ជំនួយការប្រើប្រាស់លើ `ubuntu`
