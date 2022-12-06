@@ -75,3 +75,8 @@ echo -e "******** DONE **********"
 echo -e "************************\n"
 echo -e "\n>> Start command : chsh -s $(which zsh)"
 echo -e ">> Start command : source $HOME/.zshrc"
+
+chsh -s $(which zsh)
+source $HOME/.zshrc
+
+echo -e "## DONE ##\nPlease close terminal or login again!"
